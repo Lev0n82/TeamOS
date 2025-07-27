@@ -1,10 +1,10 @@
-# Teams OS: Birthday Cake Planner 🎂
+# Team OS: Birthday Cake Planner 🎂
 
 A celebration-themed task management and productivity platform featuring a delightful Birthday Cake AI assistant that makes productivity sweet and rewarding.
 
 ## Overview
 
-Teams OS: Birthday Cake Planner transforms the mundane task of productivity management into a joyful celebration. With our charming Birthday Cake AI assistant, every completed task becomes a reason to celebrate, every milestone becomes a party, and every achievement unlocks sweet rewards.
+Team OS: Birthday Cake Planner transforms the mundane task of productivity management into a joyful celebration. With our charming Birthday Cake AI assistant, every completed task becomes a reason to celebrate, every milestone becomes a party, and every achievement unlocks sweet rewards.
 
 ## Features
 
