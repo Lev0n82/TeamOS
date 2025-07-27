@@ -1,0 +1,143 @@
+{
+  "subjects": {
+    "task_creation": {
+      "primary_model": {
+        "provider": "openai",
+        "model_name": "gpt-3.5-turbo",
+        "api_key": null,
+        "api_base": null,
+        "max_tokens": 150,
+        "temperature": 0.8,
+        "timeout": 10,
+        "retry_attempts": 3,
+        "retry_delay": 1.0
+      },
+      "fallback_model": {
+        "provider": "fallback",
+        "model_name": "static_responses",
+        "timeout": 1
+      },
+      "system_prompt": "You are a cheerful Birthday Cake AI assistant helping users create tasks. Respond with encouraging, cake-themed messages that motivate task creation. Keep responses under 100 characters and include cake/celebration emojis. Be enthusiastic and supportive.",
+      "context_template": "User is creating a task: '{task_title}' with priority {priority} and difficulty {difficulty}. Generate an encouraging response.",
+      "response_format": "text",
+      "cache_responses": true,
+      "cache_duration_hours": 24
+    },
+    "task_completion": {
+      "primary_model": {
+        "provider": "openai",
+        "model_name": "gpt-3.5-turbo",
+        "api_key": null,
+        "api_base": null,
+        "max_tokens": 150,
+        "temperature": 0.9,
+        "timeout": 10,
+        "retry_attempts": 3,
+        "retry_delay": 1.0
+      },
+      "fallback_model": {
+        "provider": "fallback",
+        "model_name": "static_responses",
+        "timeout": 1
+      },
+      "system_prompt": "You are an enthusiastic Birthday Cake AI celebrating task completion. Respond with joyful, celebratory messages that acknowledge the user's achievement. Include celebration emojis and cake-themed language. Make the user feel proud and motivated.",
+      "context_template": "User completed task: '{task_title}' in {completion_time} minutes, difficulty {difficulty}, current streak: {streak_length}. Celebrate their success!",
+      "response_format": "text",
+      "cache_responses": true,
+      "cache_duration_hours": 12
+    },
+    "motivation": {
+      "primary_model": {
+        "provider": "openai",
+        "model_name": "gpt-3.5-turbo",
+        "api_key": null,
+        "api_base": null,
+        "max_tokens": 120,
+        "temperature": 0.7,
+        "timeout": 10,
+        "retry_attempts": 3,
+        "retry_delay": 1.0
+      },
+      "fallback_model": {
+        "provider": "fallback",
+        "model_name": "static_responses",
+        "timeout": 1
+      },
+      "system_prompt": "You are a supportive Birthday Cake AI providing motivation. Give encouraging, uplifting messages that inspire productivity. Use sweet, cake-themed metaphors and positive language. Help users overcome challenges with kindness.",
+      "context_template": "User needs motivation. Current streak: {streak}, completed tasks: {completed_tasks}, mood: {user_mood}. Provide encouraging support.",
+      "response_format": "text",
+      "cache_responses": true,
+      "cache_duration_hours": 6
+    },
+    "celebration": {
+      "primary_model": {
+        "provider": "openai",
+        "model_name": "gpt-3.5-turbo",
+        "api_key": null,
+        "api_base": null,
+        "max_tokens": 180,
+        "temperature": 1.0,
+        "timeout": 10,
+        "retry_attempts": 3,
+        "retry_delay": 1.0
+      },
+      "fallback_model": {
+        "provider": "fallback",
+        "model_name": "static_responses",
+        "timeout": 1
+      },
+      "system_prompt": "You are an excited Birthday Cake AI leading celebrations. Create enthusiastic, party-themed responses for achievements and milestones. Use lots of celebration emojis and festive language. Make every achievement feel special and worthy of celebration.",
+      "context_template": "Celebrating: {achievement_type} - {achievement_details}. Create an amazing celebration response!",
+      "response_format": "text",
+      "cache_responses": true,
+      "cache_duration_hours": 24
+    },
+    "encouragement": {
+      "primary_model": {
+        "provider": "openai",
+        "model_name": "gpt-3.5-turbo",
+        "api_key": null,
+        "api_base": null,
+        "max_tokens": 130,
+        "temperature": 0.6,
+        "timeout": 10,
+        "retry_attempts": 3,
+        "retry_delay": 1.0
+      },
+      "fallback_model": {
+        "provider": "fallback",
+        "model_name": "static_responses",
+        "timeout": 1
+      },
+      "system_prompt": "You are a gentle, supportive Birthday Cake AI offering encouragement. Provide warm, understanding messages that help users overcome challenges. Use comforting, sweet language with cake metaphors. Be empathetic and reassuring.",
+      "context_template": "User needs encouragement. Challenge: {challenge}, current_state: {state}. Provide gentle, supportive guidance.",
+      "response_format": "text",
+      "cache_responses": true,
+      "cache_duration_hours": 12
+    },
+    "productivity_tips": {
+      "primary_model": {
+        "provider": "openai",
+        "model_name": "gpt-3.5-turbo",
+        "api_key": null,
+        "api_base": null,
+        "max_tokens": 200,
+        "temperature": 0.5,
+        "timeout": 15,
+        "retry_attempts": 3,
+        "retry_delay": 1.0
+      },
+      "fallback_model": {
+        "provider": "fallback",
+        "model_name": "static_responses",
+        "timeout": 1
+      },
+      "system_prompt": "You are a wise Birthday Cake AI sharing productivity wisdom. Provide practical, actionable productivity tips with a sweet, cake-themed twist. Make advice memorable and fun while being genuinely helpful.",
+      "context_template": "User asking for productivity help with: {topic}, experience_level: {level}. Share helpful, cake-themed advice.",
+      "response_format": "text",
+      "cache_responses": true,
+      "cache_duration_hours": 48
+    }
+  }
+}
+
