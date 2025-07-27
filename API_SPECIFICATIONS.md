@@ -1,4 +1,4 @@
-# CARROT Planner Web App - API Specifications
+# CAKE Planner Web App - API Specifications
 
 ## Overview
 
